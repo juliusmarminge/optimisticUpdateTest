@@ -1,0 +1,25 @@
+diff --git a/node_modules/@trpc/react/dist/shared/proxy/utilsProxy.d.ts b/node_modules/@trpc/react/dist/shared/proxy/utilsProxy.d.ts
+index a3ce1e0..ae5ee13 100644
+--- a/node_modules/@trpc/react/dist/shared/proxy/utilsProxy.d.ts
++++ b/node_modules/@trpc/react/dist/shared/proxy/utilsProxy.d.ts
+@@ -1,5 +1,4 @@
+-import { CancelOptions, InfiniteData, InvalidateOptions, InvalidateQueryFilters, RefetchOptions, RefetchQueryFilters, SetDataOptions } from '@tanstack/react-query';
+-import { Updater } from '@tanstack/react-query/build/types/packages/query-core/src/utils';
++import { CancelOptions, InfiniteData, InvalidateOptions, InvalidateQueryFilters, RefetchOptions, RefetchQueryFilters, SetDataOptions, Updater } from '@tanstack/react-query';
+ import { TRPCClientError } from '@trpc/client';
+ import { AnyQueryProcedure, AnyRouter, Filter, ProcedureOptions, inferProcedureInput, inferProcedureOutput } from '@trpc/server';
+ import { TRPCContextProps, TRPCContextState, TRPCFetchInfiniteQueryOptions, TRPCFetchQueryOptions } from '../../internals/context';
+diff --git a/node_modules/@trpc/react/src/shared/proxy/utilsProxy.ts b/node_modules/@trpc/react/src/shared/proxy/utilsProxy.ts
+index 3f84f1a..9fabd88 100644
+--- a/node_modules/@trpc/react/src/shared/proxy/utilsProxy.ts
++++ b/node_modules/@trpc/react/src/shared/proxy/utilsProxy.ts
+@@ -6,8 +6,8 @@ import {
+   RefetchOptions,
+   RefetchQueryFilters,
+   SetDataOptions,
++  Updater,
+ } from '@tanstack/react-query';
+-import { Updater } from '@tanstack/react-query/build/types/packages/query-core/src/utils';
+ import { TRPCClientError } from '@trpc/client';
+ import {
+   AnyProcedure,
